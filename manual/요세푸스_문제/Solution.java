@@ -1,17 +1,11 @@
-package org.example.ps.manual;
-
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
 
-public class 요세푸스_문제 {
+public class Solution {
   public static void main(String[] args) {
-    System.out.println(new Solution().solution(6, 2));
-  }
-}
-
-class Solution {
-  public List<Integer> solution(int N, int K) {
+    int N = 7;
+    int K = 3;
     ArrayDeque<Integer> queue = new ArrayDeque<>();
     for (int i = 1; i <= N; i++) {
       queue.add(i);
@@ -28,6 +22,6 @@ class Solution {
       ret.add(queue.removeFirst());
     }
 
-    return ret;
+    System.out.println(ret);
   }
 }
